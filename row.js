@@ -19,8 +19,11 @@ $(document).ready(function() {
 		}
 	}
 	
+	$('#reset').click(function(){
+		$('#canvas').empty();
+	});
+	
 	$('div').on('mouseenter', '.pixel', function(){
-		console.log('Mouse entered');
 		$(this).css('background-color', 'black');
 	});
 
